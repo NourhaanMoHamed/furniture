@@ -1,0 +1,213 @@
+.family, .parent, .column2 p, .child2 p, .child2 h5 {
+  font-family: 'Spartan', sans-serif;
+}
+
+@media screen and (min-device-width: 275px) {
+  .back, .column1, .child1, .child3 {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .cent, .column2 {
+    padding-left: 5%;
+    padding-top: 15%;
+    padding-right: 3%;
+  }
+  .bold1, .child2 p, .column2 p {
+    font-weight: 500;
+  }
+  .bolder1, .child2 h5 {
+    font-weight: 600;
+  }
+  .boldest1, .column2 h1 {
+    font-weight: 700;
+  }
+  .parent {
+    display: grid;
+    grid-template-rows: 27% 67% 27% 30% 27%;
+    grid-template-columns: 98%;
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+  }
+  .gap {
+    grid-row-gap: 10%;
+  }
+  .column1 {
+    padding-left: 2%;
+    grid-column: 1;
+    grid-row: 1;
+    background-image: url("images/desktop-image-hero-1.jpg");
+  }
+  .column2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  .child1 {
+    grid-row: 3;
+    grid-column: 1;
+    background-image: url("images/image-about-dark.jpg");
+  }
+  .child2 {
+    padding-top: 4%;
+    padding-left: 4%;
+    grid-row: 4;
+    grid-column: 1;
+    padding-right: 4%;
+  }
+  .child3 {
+    grid-row: 5;
+    grid-column: 1;
+    background-image: url("images/image-about-light.jpg");
+  }
+  .linkbutton {
+    width: 25%;
+    border-radius: 0%;
+    height: 7vh;
+  }
+  .child2 p {
+    font-size: 12px;
+  }
+  .child2 h5 {
+    font-size: 15px;
+    margin-top: 7%;
+  }
+  .buttondiv {
+    margin-top: 1%;
+    position: static;
+  }
+  .column2 p {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  /***************Grid View start***************************/
+  .background, .column1, .child1 {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+  .column2 p {
+    height: 18vh;
+  }
+  .center, .column2 {
+    padding-left: 5%;
+    padding-top: 15%;
+    padding-right: 3%;
+  }
+  .positioning, .parent {
+    position: fixed;
+    left: 5%;
+  }
+  .bold, .column2 p, .child2 p {
+    font-weight: 500;
+  }
+  .bolder, .child2 h5 {
+    font-weight: 600;
+  }
+  .boldest, .column2 h1 {
+    font-weight: 700;
+  }
+  .parent {
+    display: grid;
+    grid-template-rows: 65% 30%;
+    grid-template-columns: 28% 27% 30%;
+    height: 100vh;
+    width: 100%;
+  }
+  .column1 {
+    padding-left: 2%;
+    grid-column: 1/ span 2;
+    grid-row: 1;
+    background-image: url("images/desktop-image-hero-1.jpg");
+  }
+  .column2 {
+    grid-column: 3;
+    grid-row: 1;
+  }
+  .child1 {
+    grid-row: 2;
+    grid-column: 1;
+    background-image: url("images/image-about-dark.jpg");
+  }
+  .child2 {
+    padding-top: 4%;
+    padding-left: 4%;
+    grid-row: 2;
+    grid-column: 2;
+    padding-right: 4%;
+  }
+  .child3 {
+    grid-row: 2;
+    grid-column: 3;
+    background-image: url("images/image-about-light.jpg");
+  }
+  .column2 p {
+    margin-top: 6%;
+  }
+  .buttondiv {
+    margin-top: 10%;
+    position: static;
+  }
+  .btn2 {
+    margin-right: 0px !important;
+  }
+  .linkbutton {
+    width: 25%;
+    border-radius: 0%;
+    height: 9vh;
+  }
+  .child2 p {
+    font-size: 12px;
+  }
+  .child2 h5 {
+    font-size: 15px;
+    margin-top: 7%;
+  }
+  /***************Grid View end***************************/
+}
+
+ul {
+  display: inline;
+  list-style: none;
+}
+
+li {
+  display: inline;
+}
+
+.undecoratedlink {
+  display: inline;
+  text-decoration: none;
+  color: white;
+  margin-left: 1%;
+}
+
+.title {
+  display: inline;
+  color: white;
+}
+
+.link {
+  color: black;
+}
+
+.column2 p {
+  color: #b4b4b4;
+}
+
+.linkbutton {
+  background-color: black;
+  display: inline-block;
+}
+
+.linkbutton:hover {
+  opacity: 0.8;
+}
+
+.child2 p {
+  color: silver;
+}
+
+.child2 h5 {
+  color: black;
+}
